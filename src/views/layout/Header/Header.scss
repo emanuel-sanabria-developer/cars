@@ -1,0 +1,50 @@
+@import "../../../styles/styles.scss";
+
+.auto-Header {
+  width: 100%;
+  height: $headerHeight;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  background: $backgroundColor;
+  border-bottom: 1px solid $dividerColor;
+  z-index: 1;
+
+  &__inner {
+    max-width: $containerMaxWidthLg;
+    margin: 0 auto;
+    padding: 0 $spacingMd;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include md {
+      padding: 0 $spacingLg;
+    }
+  }
+  
+  &__logo {
+    width: 180px;
+  }
+
+  &__nav {
+    display: none;
+
+    @include sm {
+      display: flex;
+    }
+  }
+
+  &__link {
+    color: $textColor;
+    padding: $spacingMd;
+
+    &:hover,
+    &:active {
+      color: $orangeBrand;
+      text-decoration: none;
+    }
+  }
+}

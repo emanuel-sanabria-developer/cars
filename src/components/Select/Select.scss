@@ -1,0 +1,26 @@
+// I didn't styled the Select, because 
+// from a a11y point of view the best approach it's to use the native select element
+
+@import "../../styles/styles.scss";
+
+.auto1-Select {
+  margin-bottom: $spacingMd;
+
+  &__label {
+    margin-bottom: $spacingSm;
+  }
+
+  &__input {
+    margin: 0;
+    padding: 0 $spacingSm;
+    width: 100%;
+    height: $inputHeight;
+    display: block;
+    font: inherit;
+    color: inherit;
+    border: 1px solid $borderColor;
+    border-radius: 2px;
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}

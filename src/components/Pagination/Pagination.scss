@@ -1,0 +1,17 @@
+@import "../../styles/styles.scss";
+
+.auto1-Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $spacingMd 0 $spacingLg 0;
+
+  &__button {
+    flex-grow: 1;
+  }
+
+  &__display {
+    min-width: 10ch;
+    text-align: center;
+  }
+}

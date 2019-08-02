@@ -1,0 +1,49 @@
+@import "../../../styles/styles.scss";
+
+.auto-List {
+  &__item {
+    display: flex;
+    margin-bottom: $spacingMd;
+    padding: $spacingMd;
+  }
+
+  &__specs {
+    margin-bottom: $spacingSm;
+  }
+
+  &__specsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+
+  &__imgWrapper {
+    margin-right: $carTileImgSpacing;
+    width: $carTileImgWidth;
+    min-width: $carTileImgMinWidth;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  &__imgContent {
+    background-color: $imagePlaceholderBackgroundColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__img {
+    padding: $spacingMd;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__remove {
+    margin-top: $spacingMd;
+  }
+}

@@ -1,0 +1,76 @@
+@import "./variables.scss";
+
+@mixin sm() {
+  @media print, screen and (min-width: $breakpointSm) {
+    @content;
+  }
+}
+
+@mixin md() {
+  @media print, screen and (min-width: $breakpointMd) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media screen and (min-width: $breakpointLg) {
+    @content;
+  }
+}
+
+@mixin container() {
+  width: 100%;
+  max-width: $containerMaxWidthMd;
+  flex-grow: 1;
+  margin: $spacingLg auto;
+  padding: 0 $spacingMd;
+
+  @include md {
+    padding: 0 $spacingLg;
+  }
+}
+
+@mixin buttonStyles() {
+  border: none;
+  font-size: inherit;
+  cursor: pointer;
+  border-radius: 2px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+
+  &:not(&--anchorStyle) {
+    width: $buttonWidth;
+    height: $buttonHeight;
+    transition-property: background-color;
+    background-color: $primaryAction;
+    color: $textColorInverse;
+
+    &:hover,
+    &:active {
+      background-color: $primaryActionHover;
+    }
+  }
+
+  &--anchorStyle {
+    color: $primaryAction;
+    transition-property: color;
+
+    &:hover,
+    &:active {
+      color: $primaryActionHover;
+      text-decoration: underline;
+    }
+  }
+
+  &--anchorStyle#{&}--disabled {
+    color: fade-out($color: $primaryAction, $amount: 0.5);
+    text-decoration: none;
+    cursor: not-allowed;
+  }
+}
+
+

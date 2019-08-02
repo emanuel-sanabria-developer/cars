@@ -1,0 +1,9 @@
+@import './styles/base.scss';
+
+.auto1-App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-shrink: 0;
+}

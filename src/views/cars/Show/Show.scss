@@ -1,0 +1,39 @@
+@import "../../../styles/styles.scss";
+
+.auto1-Show {
+  flex-grow: 1;
+
+  &__imageContainer {
+    background-color: $imagePlaceholderBackgroundColor;
+    height: $imagePlaceholderHeight; // magic number
+
+    @include md {
+      height: $imagePlaceholderHeight * 2; // magic number
+    }
+  }
+
+  &__detailsContainer {
+    @include container;
+
+    @include sm {
+      padding: $spacingLg;
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__specs {
+    margin-bottom: $spacingLg;
+    font-size: $fontSizeMd;
+  }
+
+  &__detailsContent {
+    margin-right: $spacingLg;
+    margin-bottom: $spacingLg;
+  }
+
+  &__saveContainer {
+    min-width: 250px;
+  }
+
+}

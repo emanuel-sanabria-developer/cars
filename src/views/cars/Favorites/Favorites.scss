@@ -1,0 +1,9 @@
+@import "../../../styles/styles.scss";
+
+.auto1-Favorites {
+  @include container;
+
+  &__message {
+    font-size: $fontSizeMd;
+  }
+}

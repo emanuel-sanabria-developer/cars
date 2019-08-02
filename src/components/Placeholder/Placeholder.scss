@@ -1,0 +1,56 @@
+@import "../../styles/styles.scss";
+
+@keyframes placeholderAnimation{
+  0% {
+    background-position: -400px 0
+  }
+  100% {
+    background-position: 400px 0
+  }
+}
+
+.auto1-Placeholder {
+  display: flex;
+  padding: $spacingMd;
+  margin-bottom: $spacingMd;
+
+  &__img {
+    height: 85px;
+    width: $carTileImgWidth;
+    margin-right: $carTileImgSpacing;
+  }
+
+  &__img,
+  &__detailsMock {
+    position: relative;
+    animation-name: placeholderAnimation;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background: linear-gradient(to right, 
+      $imagePlaceholderBackgroundColor 8%, 
+      darken($imagePlaceholderBackgroundColor, 1) 18%, 
+      darken($imagePlaceholderBackgroundColor, 2) 33%);
+    background-size: 800px;
+  }
+
+  &__details {
+    width: $placeholderDetailsWidth;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__detailsMock {
+    height: $fontSizeBase;
+
+    &:first-child {
+      height: $fontSizeBase * 2;
+    }
+
+    &:last-child {
+      width: $placeholderDetailsWidth / 2;
+    }
+  }
+}

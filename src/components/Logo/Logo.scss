@@ -1,0 +1,10 @@
+@import "../../styles/styles";
+
+.auto1-Logo {
+  // correction to logo vertical align
+  margin-bottom: -10px; 
+
+  &--sm {
+    width: $logoWidthSm;
+  }
+}

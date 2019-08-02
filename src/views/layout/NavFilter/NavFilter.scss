@@ -1,0 +1,21 @@
+@import "../../../styles/styles.scss";
+
+.auto1-NavFilter {
+  margin-bottom: $spacingMd;
+  
+  @include md {
+    margin-bottom: $spacingLg;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: $headerHeight + $spacingLg;
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+
+  &__manufacturerSelect {
+    margin-bottom: $spacingLg;
+  }
+}

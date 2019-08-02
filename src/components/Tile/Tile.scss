@@ -1,0 +1,11 @@
+@import "../../styles/styles";
+
+.auto1-Tile {
+  padding: $spacingMd;
+  border-radius: 1px;
+  border: 1px solid $borderColor;
+
+  @include md {
+    padding: $spacingLg;
+  }
+}

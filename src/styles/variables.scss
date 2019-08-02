@@ -1,0 +1,52 @@
+// base colors
+$white: white;
+$gray: #ededed;
+$charcoal: #4a4a4a;
+$orangeBrand: #ea7f28;
+$orangeDark: #d37324;
+
+// colors
+$backgroundColor: $white;
+$textColor: $charcoal;
+$textColorInverse: $white;
+$primaryAction: $orangeBrand;
+$primaryActionHover: $orangeDark;
+$dividerColor: $gray;
+$borderColor: $gray;
+
+// fonts
+$fontSizeSm: 12px;
+$fontSizeBase: 14px;
+$fontSizeMd: 18px;
+$fontSizeLg: 32px;
+
+// spacing
+$spacingSm: 8px;
+$spacingMd: 12px;
+$spacingLg: 24px;
+
+// breakpoints
+$breakpointSm: 544px;
+$breakpointMd: 768px;
+$breakpointLg: 992px;
+
+// forms
+$inputHeight: 32px;
+$inputMaxWidth: 256px;
+$buttonHeight: $inputHeight;
+$buttonWidth: 128px;
+
+// layout
+$headerHeight: 80px;
+$footerHeight: $headerHeight;
+$containerMaxWidthMd: 800px;
+$containerMaxWidthLg: 1000px;
+
+//Components
+$logoWidthSm: 150px;
+$carTileImgWidth: 20%;
+$carTileImgMinWidth: 95px;
+$carTileImgSpacing: $spacingMd;
+$placeholderDetailsWidth: 200px;
+$imagePlaceholderBackgroundColor: $gray;
+$imagePlaceholderHeight: 150px;
