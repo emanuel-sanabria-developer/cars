@@ -16,7 +16,7 @@
     "faker": "4.1.0",
     "jest": "24.8.0",
     "jest-mock": "24.8.0",
-    "lodash-es": "4.17.11",
+    "lodash-es": "4.17.21",
     "nanoid": "2.0.1",
     "query-string": "6.8.1",
     "react": "16.8.6",
