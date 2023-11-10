@@ -9,7 +9,7 @@
     "@types/query-string": "6.3.0",
     "@types/react-router-dom": "4.3.4",
     "@types/store": "2.0.2",
-    "axios": "0.18.1",
+    "axios": "1.6.0",
     "axios-mock-adapter": "1.17.0",
     "babel-jest": "24.8.0",
     "babel-plugin-jest-hoist": "24.6.0",
